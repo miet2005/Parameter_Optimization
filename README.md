@@ -57,4 +57,17 @@ The graph below shows the fitness (accuracy) across 100 iterations for the best-
 
 ![Convergence Graph](convergence_graph.png)
 
+## 🧾 Conclusion
+
+The SVM optimization experiment conducted on the UCI Letter Recognition dataset demonstrates that careful tuning of SVM hyperparameters significantly impacts classification accuracy. Across 10 randomized 70-30 train-test splits and 100 iterations each:
+
+- The highest accuracy achieved was **97.17%** using the **RBF kernel**, with `nu=0.01` and `epsilon=0.34`.
+- **RBF kernel** consistently outperformed other kernels (like `poly` and `sigmoid`) in most samples.
+- The parameter `nu=0.01` appeared frequently among the best configurations, indicating that a more flexible margin led to better performance on this multi-class task.
+- The **accuracy fluctuated greatly during optimization**, as shown in the convergence graph, emphasizing the importance of parameter search in achieving optimal performance.
+- Despite high dimensionality and class diversity, the optimized SVM maintained stable and strong performance across samples, with all accuracies above **95%**.
+
+This experiment validates the effectiveness of support vector machines for multi-class classification and highlights the need for systematic hyperparameter optimization to unlock their full potential.
+
+
 
