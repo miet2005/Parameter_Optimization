@@ -55,6 +55,6 @@ This project focuses on optimizing Support Vector Machine (SVM) classifiers on a
 
 The graph below shows the fitness (accuracy) across 100 iterations for the best-performing sample (S2):
 
-![Convergence Graph](./path/to/convergence_graph.png)
+![Convergence Graph](convergence_graph.png)
 
 
